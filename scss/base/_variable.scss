@@ -1,0 +1,57 @@
+/* === 01 顏色 ====== */
+
+/* --- 01-1. 色系 --- */
+
+    
+/* --- 01-2. 背景色 --- */
+    
+    
+/* --- 01-3. 文字顏色 --- */
+    
+
+/* -- border-box -- */
+        
+**,**::before,*::after {
+    box-sizing: border-box;
+}
+
+/* === 02 字體 ====== */
+
+/* --- 02-1. 字級 --- */
+    
+    
+/* --- 02-2. 字重 --- */
+    
+.fw-light {
+    font-weight: 300;
+}
+.fw-medium {
+    font-weight: 500;
+}
+.fw-semibold {
+    font-weight: 600;
+}
+.fw-bold {
+    font-weight: 700;
+}
+
+/* === 03 border-box ====== */
+
+**,**::before,*::after {
+box-sizing: border-box;
+}
+/* *{
+outline: 1px solid yellowgreen;
+}*/
+
+/* === 04 全站樣式 ====== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height:
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+}
