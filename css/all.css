@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,3 +52,244 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* === 自定義 reset ====== */
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+button {
+  font-family: "Noto Sans TC", sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+}
+
+/* === 01 顏色 ====== */
+/* --- 01-1. 色系 --- */
+/* --- 01-2. 背景色 --- */
+.bg-primary {
+  background-color: #AA0601;
+}
+
+.bg-secondary {
+  background-color: #FBF2F2;
+}
+
+/* --- 01-3. 文字顏色 --- */
+.color-primary {
+  color: #AA0601;
+}
+
+.color-secondary {
+  color: #FBF2F2;
+}
+
+/* === 02 display 字體 ====== */
+.display-1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.display-2 {
+  font-size: 2.625rem;
+  font-weight: 500;
+}
+
+.display-3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.display-4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.display-5 {
+  font-size: 1.125rem;
+}
+
+/* === 03 border-box ====== */
+**, **::before, *::after {
+  box-sizing: border-box;
+}
+
+/* *{
+outline: 1px solid yellowgreen;
+}*/
+/* === 04 全站樣式 ====== */
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-1 {
+  width: 8.333%;
+}
+
+.col-2 {
+  width: 16.666%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333%;
+}
+
+.col-5 {
+  width: 41.666%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333%;
+}
+
+.col-8 {
+  width: 66.666%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333%;
+}
+
+.col-11 {
+  width: 91.666%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* === 01 flex ====== */
+.d-flex {
+  display: flex;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.m0-auto {
+  margin: 0 auto;
+}
+
+/* === 02 margin(4的倍數) ====== */
+/* --- 02-1. margin-right --- */
+/* --- 02-2. margin-bottom --- */
+/* === 03 padding(4的倍數) ====== */
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* === 04 text-align ====== */
+/* === 05 刪除線 ====== */

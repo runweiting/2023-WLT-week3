@@ -1,0 +1,47 @@
+/* === 01 flex ====== */
+.d-flex {
+    display: flex;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.ms-auto {
+    margin-left: auto;
+}
+.me-auto {
+    margin-right: auto;
+}
+.m0-auto {
+    margin: 0 auto;
+}
+
+/* === 02 margin(4的倍數) ====== */
+
+/* --- 02-1. margin-right --- */
+
+/* --- 02-2. margin-bottom --- */
+
+/* === 03 padding(4的倍數) ====== */
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* === 04 text-align ====== */
+
+/* === 05 刪除線 ====== */
