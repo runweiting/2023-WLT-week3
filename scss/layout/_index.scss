@@ -1,5 +1,5 @@
 /* --- banner 橫幅 --- */
-.banner {
+.banner-primary {
     height: 787px;
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
     background-size: cover;
@@ -13,4 +13,11 @@
         padding: 6px 12px;
     }
 }
-/* --- banner 橫幅 --- */
+/* --- 聯名鏡框 --- */
+.banner-secondary {
+    height: 608px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

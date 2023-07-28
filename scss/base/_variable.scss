@@ -14,6 +14,9 @@ $white: #ffffff;
 .bg-light {
     background-color: $color-light;
 }
+.bg-white {
+    background-color: #ffffff;
+}
     
 /* --- 01-3. 文字顏色 --- */
 .color-primary {
@@ -60,12 +63,11 @@ outline: 1px solid yellowgreen;
 body {
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     line-height: 1.5;
+    color: #000000;
 }
 .container {
     max-width: 1296px;
     margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 .material-symbols-outlined {
     vertical-align: middle;
