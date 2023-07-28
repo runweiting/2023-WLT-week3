@@ -5,6 +5,7 @@ $color-primary: #AA0601;
 $color-secondary: #650300;
 $color-light: #FBF2F2;
 $black: #000000;
+$grey: #707070;
 $white: #ffffff;
     
 /* --- 01-2. 背景色 --- */
@@ -24,6 +25,9 @@ $white: #ffffff;
 }
 .color-secondary {
     color: $color-secondary;
+}
+.grey {
+    color: $grey;
 }
 .white {
     color: #ffffff;
@@ -55,9 +59,9 @@ $white: #ffffff;
 **,**::before,*::after {
 box-sizing: border-box;
 }
-*{
+/*{
 outline: 1px solid yellowgreen;
-}
+}*/
 
 /* === 04 全站樣式 ====== */
 body {

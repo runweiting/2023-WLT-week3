@@ -21,3 +21,11 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+/* --- 聯絡我們 --- */
+.contact li:nth-child(4) input {
+    height: 136px;
+    &::placeholder {
+        position: relative;
+        top: -3rem;
+    }
+}
