@@ -21,6 +21,9 @@ $white: #ffffff;
 .color-secondary {
     color: $color-secondary;
 }
+.white {
+    color: #ffffff;
+}
 
 /* === 02 display 字體 ====== */
 .display-1 {
@@ -48,24 +51,25 @@ $white: #ffffff;
 **,**::before,*::after {
 box-sizing: border-box;
 }
-/* *{
+*{
 outline: 1px solid yellowgreen;
-}*/
+}
 
 /* === 04 全站樣式 ====== */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     line-height: 1.5;
 }
-.wrap {
+.container {
     max-width: 1320px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
 }
-.material-icons {
+.material-symbols-outlined {
     vertical-align: middle;
+    font-size: 2.25rem;
+    color: #ffffff;
 }
 .row {
     display: flex;

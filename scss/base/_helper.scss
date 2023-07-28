@@ -33,15 +33,58 @@
 /* === 02 margin(4的倍數) ====== */
 
 /* --- 02-1. margin-right --- */
+.mr-5 {
+    margin-right: 1.25rem;
+}
+.mr-6 {
+    margin-right: 1.5rem;
+}
+.mr-8 {
+    margin-right: 2rem;
+}
+.mr-12 {
+    margin-right: 3rem;
+}
+.mr-16 {
+    margin-right: 4rem;
+}
 
 /* --- 02-2. margin-bottom --- */
+.mb-2 {
+    margin-bottom: 8px;
+}
+.mb-6 {
+    margin-bottom: 24px;
+}
+.mb-8 {
+    margin-bottom: 32px;
+}
 
 /* === 03 padding(4的倍數) ====== */
+.p-2 {
+    padding: 0.5rem;
+}
+.p-3 {
+    padding: 0.75rem;
+}
 .px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
-/* === 04 text-align ====== */
+/* === 04 border ====== */
+.border-top {
+    border-top: 1px solid #ffffff;
+}
 
-/* === 05 刪除線 ====== */
+/* === 05 text-align ====== */
+
+/* === 06 刪除線 ====== */
