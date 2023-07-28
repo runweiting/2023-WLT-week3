@@ -2,7 +2,8 @@
 
 /* --- 01-1. 色系 --- */
 $color-primary: #AA0601;
-$color-secondary: #FBF2F2;
+$color-secondary: #650300;
+$color-light: #FBF2F2;
 $black: #000000;
 $white: #ffffff;
     
@@ -10,8 +11,8 @@ $white: #ffffff;
 .bg-primary {
     background-color: $color-primary;
 }
-.bg-secondary {
-    background-color: $color-secondary;
+.bg-light {
+    background-color: $color-light;
 }
     
 /* --- 01-3. 文字顏色 --- */
@@ -61,7 +62,7 @@ body {
     line-height: 1.5;
 }
 .container {
-    max-width: 1320px;
+    max-width: 1296px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -72,6 +73,10 @@ body {
     color: #ffffff;
 }
 .row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.row-flex {
     display: flex;
     margin-left: -12px;
     margin-right: -12px;

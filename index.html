@@ -14,84 +14,92 @@
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
+    <!--- header 表頭 --->
     <div class="bg-primary">
-        <div class="header container d-flex justify-content-between align-items-center py-4">
-            <a href="index.html" class="logo">
-                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="brand-logo">
-            </a>
-            <ul class="menu d-flex">
-                <li>
-                    <h6><a class="p-2 white mr-12" href="#">系列鏡框</a></h6>
-                </li>
-                <li>
-                    <h6><a class="p-2 white mr-12" href="#">門市據點</a></h6>
-                </li>
-                <li>
-                    <h6><a class="p-2 white mr-12" href="#">部落格</a></h6>
-                </li>
-                <li>
-                    <h6><a class="p-2 white" href="#">常見問題</a></h6>
-                </li>
-            </ul>
+        <div class="header container">
+            <div class="row-flex d-flex justify-content-between align-items-center py-4">
+                <a href="index.html" class="logo">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true" alt="brand-logo">
+                </a>
+                <ul class="menu d-flex">
+                    <li>
+                        <h6><a class="p-2 white mr-12" href="#">系列鏡框</a></h6>
+                    </li>
+                    <li>
+                        <h6><a class="p-2 white mr-12" href="#">門市據點</a></h6>
+                    </li>
+                    <li>
+                        <h6><a class="p-2 white mr-12" href="#">部落格</a></h6>
+                    </li>
+                    <li>
+                        <h6><a class="p-2 white" href="#">常見問題</a></h6>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="banner container">
-        <div class="banner-text">
-            <h3>Promise-Desert 2020 早春系列</h3>
-            <h1>看得清，才能看得遠</h1>
-            <h6><a href="#" class="btn">立即購買</a></h6>
+    <!--- banner 橫幅 --->
+    <div class="banner">
+        <div class="banner-text container d-flex align-items-center">
+            <div class="row col-6 ms-auto text-end">
+                <h3 class="color-secondary">Promise-Desert 2020 早春系列</h3>
+                <h1 class="color-secondary">看得清，才能看得遠</h1>
+                <h6><a href="#" class="btn bg-primary white">立即購買</a></h6>
+            </div>
         </div>
     </div>
 
 
     <div class="bg-primary">
         <div class="footer container">
-            <div class="col-12 d-flex justify-content-between mb-6">
-                <ul class="menu d-flex align-items-center">
-                    <li><a class="p-3 white mr-6" href="index.html">首頁</a></li>
-                    <li><a class="p-3 white mr-6" href="#">系列鏡框</a></li>
-                    <li><a class="p-3 white mr-6" href="#">門市據點</a></li>
-                    <li><a class="p-3 white mr-6" href="#">部落格</a></li>
-                    <li><a class="p-3 white" href="#">常見問題</a></li>
-                </ul>
-                <ul class="icon d-flex">
-                    <li>
-                        <a class="mr-8" href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt="facebook-logo"></a>
-                    </li>
-                    <li>
-                        <a class="mr-8" href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true" alt="instagram-logo"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true" alt="line-logo"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12">
-                <ul class="mb-8">
-                    <li class="d-flex align-items-center mb-2">
-                        <span class="material-symbols-outlined mr-5">
-                            call
-                        </span>
-                        <h3>
-                        <a class="white" href="tel:0800-000-000" title="contact us">0800-000-000</a>
-                        </h3>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <span class="material-symbols-outlined mr-5">
-                            mail
-                        </span>
-                        <h3>
-                        <a class="white" href="mailto:glasses@business.com" accesskey="#" title="email us">glasses@business.com</a>
-                        </h3>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 d-flex justify-content-between align-items-center py-8 border-top">
-                <span class="white">Copyright © 2020 Glasses.All rights reserved.</span>
-                <ul class="d-flex align-items-center">
-                    <li><a class="white mr-12" style="font-size: 0.875rem;" href="#">隱私權政策</a></li>
-                    <li><a class="white" style="font-size: 0.875rem;" href="#">服務條款</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between mb-6">
+                    <ul class="menu d-flex align-items-center">
+                        <li><a class="p-3 white mr-6" href="index.html">首頁</a></li>
+                        <li><a class="p-3 white mr-6" href="#">系列鏡框</a></li>
+                        <li><a class="p-3 white mr-6" href="#">門市據點</a></li>
+                        <li><a class="p-3 white mr-6" href="#">部落格</a></li>
+                        <li><a class="p-3 white" href="#">常見問題</a></li>
+                    </ul>
+                    <ul class="icon d-flex">
+                        <li>
+                            <a class="mr-8" href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt="facebook-logo"></a>
+                        </li>
+                        <li>
+                            <a class="mr-8" href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true" alt="instagram-logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true" alt="line-logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <ul class="mb-8">
+                        <li class="d-flex align-items-center mb-2">
+                            <span class="material-symbols-outlined mr-5">
+                                call
+                            </span>
+                            <h3>
+                            <a class="white" href="tel:0800-000-000" title="contact us">0800-000-000</a>
+                            </h3>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <span class="material-symbols-outlined mr-5">
+                                mail
+                            </span>
+                            <h3>
+                            <a class="white" href="mailto:glasses@business.com" accesskey="#" title="email us">glasses@business.com</a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center py-8 border-top">
+                    <span class="white">Copyright © 2020 Glasses.All rights reserved.</span>
+                    <ul class="d-flex align-items-center">
+                        <li><a class="white mr-12" style="font-size: 0.875rem;" href="#">隱私權政策</a></li>
+                        <li><a class="white" style="font-size: 0.875rem;" href="#">服務條款</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
