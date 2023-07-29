@@ -102,14 +102,18 @@ label {
 input {
 	font-family: 'Roboto','Noto Sans TC', sans-serif;
 	border: none;
-	font-size: 16px;
+	padding: 6px 0;
+	margin: 8px 0 16px;
 	width: 100%;
+	font-size: 16px;
+	line-height: 1.5;
 	box-sizing: border-box;
 	text-indent: 12px;
 }
 input[type='submit'] {
 	border: none;
 	padding: 16px 0;
+	margin: 0;
 	color: #ffffff;
 	background-color: #AA0601;
 }
