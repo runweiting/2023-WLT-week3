@@ -1,4 +1,75 @@
-/* === 01 flex ====== */
+/* === 01 border-box ====== */
+*,**::before,*::after {
+    box-sizing: border-box;
+}
+*{
+outline: 1px solid yellowgreen;
+}
+
+/* === 02 全站樣式 ====== */
+body {
+    font-family: $font-family-base;
+    line-height: 1.5;
+    color: #000000;
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 2.25rem;
+    color: #ffffff;
+}
+
+/* === 03 row and col ====== */
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.row-flex {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-1 {
+    width: 8.333%;
+}
+.col-2 {
+    width: 16.666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333%;
+}
+.col-5 {
+    width: 41.666%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333%;
+}
+.col-8 {
+    width: 66.666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333%;
+}
+.col-11 {
+    width: 91.666%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* === 04 flex ====== */
 .d-flex {
     display: flex;
 }
@@ -30,9 +101,9 @@
     margin: 0 auto;
 }
 
-/* === 02 margin(4的倍數) ====== */
+/* === 05 margin(4的倍數) ====== */
 
-/* --- 02-1. margin --- */
+/* --- 05-1. margin --- */
 .ms-auto {
     margin-left: auto;
 }
@@ -44,7 +115,7 @@
     margin-right: 0.75rem;
 }
 
-/* --- 02-2. margin-right --- */
+/* --- 05-2. margin-right --- */
 .mr-1 {
     margin-right: 0.25rem;
 }
@@ -64,7 +135,7 @@
     margin-right: 4rem;
 }
 
-/* --- 02-3. margin-bottom --- */
+/* --- 05-3. margin-bottom --- */
 .mb-2 {
     margin-bottom: 0.5rem;
 }
@@ -84,7 +155,7 @@
     margin-bottom: 4.5rem;
 }
 
-/* === 03 padding(4的倍數) ====== */
+/* === 06 padding(4的倍數) ====== */
 .p-2 {
     padding: 0.5rem;
 }
@@ -115,7 +186,7 @@
     padding-bottom: 5rem;
 }
 
-/* === 04 border ====== */
+/* === 07 border ====== */
 .border-top {
     border-top: 1px solid #ffffff;
 }
@@ -124,7 +195,7 @@
     border-radius: 4px;
 }
 
-/* === 05 text-align ====== */
+/* === 08 text-align ====== */
 .text-center {
     text-align: center;
 }
@@ -134,5 +205,3 @@
 .text-end {
     text-align: right;
 }
-
-/* === 06 刪除線 ====== */

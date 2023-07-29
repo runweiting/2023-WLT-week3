@@ -1,6 +1,43 @@
-/* === 01 顏色 ====== */
+/* === 01 font-family ====== */
+$font-family-base: 'Roboto', 'Noto Sans TC', sans-serif;
+$font-size-base: 1rem; // 16px
+$font-size-sm: $font-size-base * 0.875; // 14px
+$h1-font-size: $font-size-base * 4;     // 64px
+$h2-font-size: $font-size-base * 3;     // 48px
+$h3-font-size: $font-size-base * 2.25;  // 36px
+$h4-font-size: $font-size-base * 2;     // 32px
+$h5-font-size: $font-size-base * 1.5;   // 24px
+$h6-font-size: $font-size-base * 1.25;  // 20px
 
-/* --- 01-1. 色系 --- */
+.font-size-sm {
+    font-size: $font-size-sm;
+}
+h1 {
+	font-size: $h1-font-size;
+	font-weight: 700;
+}
+h2 {
+	font-size: $h2-font-size;
+	font-weight: 700;
+}
+h3 {
+	font-size: $h3-font-size;
+}
+h4 {
+	font-size: $h4-font-size;
+}
+h5 {
+	font-size: $h5-font-size;
+	font-weight: 700;
+}
+h6 {
+	font-size: $h6-font-size;
+	font-weight: 500;
+}
+
+/* === 02 color ====== */
+
+/* --- 02-1. 色系 --- */
 $color-primary: #AA0601;
 $color-secondary: #650300;
 $color-light: #FBF2F2;
@@ -8,7 +45,7 @@ $black: #000000;
 $grey: #707070;
 $white: #ffffff;
     
-/* --- 01-2. 背景色 --- */
+/* --- 02-2. 背景色 --- */
 .bg-primary {
     background-color: $color-primary;
 }
@@ -19,7 +56,7 @@ $white: #ffffff;
     background-color: #ffffff;
 }
     
-/* --- 01-3. 文字顏色 --- */
+/* --- 02-3. 文字顏色 --- */
 .color-primary {
     color: $color-primary;
 }
@@ -31,95 +68,4 @@ $white: #ffffff;
 }
 .white {
     color: #ffffff;
-}
-
-/* === 02 display 字體 ====== */
-.display-1 {
-    font-size: 3rem;
-    font-weight: 900;
-    font-style: italic;
-}
-.display-2 {
-    font-size: 2.625rem;
-    font-weight: 500;
-}
-.display-3 {
-    font-size: 2rem;
-    font-weight: 500;
-}
-.display-4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.display-5 {
-    font-size: 1.125rem;
-}
-
-/* === 03 border-box ====== */
-**,**::before,*::after {
-box-sizing: border-box;
-}
-*{
-outline: 1px solid yellowgreen;
-}
-
-/* === 04 全站樣式 ====== */
-body {
-    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
-    line-height: 1.5;
-    color: #000000;
-}
-.container {
-    max-width: 1296px;
-    margin: 0 auto;
-}
-.material-symbols-outlined {
-    vertical-align: middle;
-    font-size: 2.25rem;
-    color: #ffffff;
-}
-.row {
-    margin-left: -12px;
-    margin-right: -12px;
-}
-.row-flex {
-    display: flex;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-.col-1 {
-    width: 8.333%;
-}
-.col-2 {
-    width: 16.666%;
-}
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-    width: 33.333%;
-}
-.col-5 {
-    width: 41.666%;
-}
-.col-6 {
-    width: 50%;
-}
-.col-7 {
-    width: 58.333%;
-}
-.col-8 {
-    width: 66.666%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.333%;
-}
-.col-11 {
-    width: 91.666%;
-}
-.col-12 {
-    width: 100%;
 }

@@ -1,7 +1,40 @@
 @charset "UTF-8";
-/* === 01 顏色 ====== */
-/* --- 01-1. 色系 --- */
-/* --- 01-2. 背景色 --- */
+/* === 01 font-family ====== */
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* === 02 color ====== */
+/* --- 02-1. 色系 --- */
+/* --- 02-2. 背景色 --- */
 .bg-primary {
   background-color: #AA0601;
 }
@@ -14,7 +47,7 @@
   background-color: #ffffff;
 }
 
-/* --- 01-3. 文字顏色 --- */
+/* --- 02-3. 文字顏色 --- */
 .color-primary {
   color: #AA0601;
 }
@@ -31,34 +64,142 @@
   color: #ffffff;
 }
 
-/* === 02 display 字體 ====== */
-.display-1 {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* === 自定義 reset ====== */
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
   font-size: 3rem;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: 700;
 }
 
-.display-2 {
-  font-size: 2.625rem;
-  font-weight: 500;
+h3 {
+  font-size: 2.25rem;
 }
 
-.display-3 {
+h4 {
   font-size: 2rem;
-  font-weight: 500;
 }
 
-.display-4 {
+h5 {
   font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
-.display-5 {
-  font-size: 1.125rem;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/* === 03 border-box ====== */
-**, **::before, *::after {
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+button {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  text-indent: 12px;
+}
+
+input[type=submit] {
+  border: none;
+  padding: 16px 0;
+  color: #ffffff;
+  background-color: #AA0601;
+}
+
+/* === 01 border-box ====== */
+*, **::before, *::after {
   box-sizing: border-box;
 }
 
@@ -66,7 +207,7 @@
   outline: 1px solid yellowgreen;
 }
 
-/* === 04 全站樣式 ====== */
+/* === 02 全站樣式 ====== */
 body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
   line-height: 1.5;
@@ -84,6 +225,7 @@ body {
   color: #ffffff;
 }
 
+/* === 03 row and col ====== */
 .row {
   margin-left: -12px;
   margin-right: -12px;
@@ -143,137 +285,7 @@ body {
   width: 100%;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* === 自定義 reset ====== */
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2.25rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
-  opacity: 0.5;
-}
-
-button {
-  font-family: "Noto Sans TC", sans-serif;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-button:hover {
-  opacity: 0.5;
-}
-
-label {
-  cursor: pointer;
-}
-
-input {
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
-  border: none;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-  text-indent: 12px;
-}
-
-input[type=submit] {
-  border: none;
-  padding: 16px 0;
-  color: #ffffff;
-  background-color: #AA0601;
-}
-
-/* === 01 flex ====== */
+/* === 04 flex ====== */
 .d-flex {
   display: flex;
 }
@@ -314,8 +326,8 @@ input[type=submit] {
   margin: 0 auto;
 }
 
-/* === 02 margin(4的倍數) ====== */
-/* --- 02-1. margin --- */
+/* === 05 margin(4的倍數) ====== */
+/* --- 05-1. margin --- */
 .ms-auto {
   margin-left: auto;
 }
@@ -329,7 +341,7 @@ input[type=submit] {
   margin-right: 0.75rem;
 }
 
-/* --- 02-2. margin-right --- */
+/* --- 05-2. margin-right --- */
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -354,7 +366,7 @@ input[type=submit] {
   margin-right: 4rem;
 }
 
-/* --- 02-3. margin-bottom --- */
+/* --- 05-3. margin-bottom --- */
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -379,7 +391,7 @@ input[type=submit] {
   margin-bottom: 4.5rem;
 }
 
-/* === 03 padding(4的倍數) ====== */
+/* === 06 padding(4的倍數) ====== */
 .p-2 {
   padding: 0.5rem;
 }
@@ -417,7 +429,7 @@ input[type=submit] {
   padding-bottom: 5rem;
 }
 
-/* === 04 border ====== */
+/* === 07 border ====== */
 .border-top {
   border-top: 1px solid #ffffff;
 }
@@ -427,7 +439,7 @@ input[type=submit] {
   border-radius: 4px;
 }
 
-/* === 05 text-align ====== */
+/* === 08 text-align ====== */
 .text-center {
   text-align: center;
 }
@@ -440,7 +452,6 @@ input[type=submit] {
   text-align: right;
 }
 
-/* === 06 刪除線 ====== */
 /* --- header 表頭 --- */
 .header img {
   height: 48px;

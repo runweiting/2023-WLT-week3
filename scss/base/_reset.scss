@@ -48,26 +48,29 @@ table {
 }
 
 /* === 自定義 reset ====== */
+.font-size-sm {
+    font-size: $font-size-sm;
+}
 h1 {
-	font-size: 4rem;
+	font-size: $h1-font-size;
 	font-weight: 700;
 }
 h2 {
-	font-size: 3rem;
+	font-size: $h2-font-size;
 	font-weight: 700;
 }
 h3 {
-	font-size: 2.25rem;
+	font-size: $h3-font-size;
 }
 h4 {
-	font-size: 2rem;
+	font-size: $h4-font-size;
 }
 h5 {
-	font-size: 1.5rem;
+	font-size: $h5-font-size;
 	font-weight: 700;
 }
 h6 {
-	font-size: 1.25rem;
+	font-size: $h6-font-size;
 	font-weight: 500;
 }
 img {
@@ -85,7 +88,7 @@ a {
 	}
 }
 button {
-	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
@@ -107,6 +110,6 @@ input {
 input[type='submit'] {
 	border: none;
 	padding: 16px 0;
-	color: $white;
-	background-color: $color-primary;
+	color: #ffffff;
+	background-color: #AA0601;
 }
