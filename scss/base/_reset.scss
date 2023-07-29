@@ -98,19 +98,15 @@ label {
 }
 input {
 	font-family: 'Roboto','Noto Sans TC', sans-serif;
+	border: none;
 	font-size: 16px;
-	color: #000000;
-	opacity: 0.5;
 	width: 100%;
 	box-sizing: border-box;
 	text-indent: 12px;
 }
-input[type=checkbox] {
-	display: inline-block;
-	border: 1px solid #000000;
-	user-select: none;
-}
-input[type=checkbox]:checked {
-	color: #000000;
-
+input[type='submit'] {
+	border: none;
+	padding: 16px 0;
+	color: $white;
+	background-color: $color-primary;
 }
