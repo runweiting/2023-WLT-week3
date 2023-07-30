@@ -48,31 +48,6 @@ table {
 }
 
 /* === 自定義 reset ====== */
-.font-size-sm {
-    font-size: $font-size-sm;
-}
-h1 {
-	font-size: $h1-font-size;
-	font-weight: 700;
-}
-h2 {
-	font-size: $h2-font-size;
-	font-weight: 700;
-}
-h3 {
-	font-size: $h3-font-size;
-}
-h4 {
-	font-size: $h4-font-size;
-}
-h5 {
-	font-size: $h5-font-size;
-	font-weight: 700;
-}
-h6 {
-	font-size: $h6-font-size;
-	font-weight: 500;
-}
 img {
 	display: block;
 	max-width: 100%;
@@ -101,14 +76,14 @@ label {
 }
 input {
 	font-family: 'Roboto','Noto Sans TC', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	text-indent: 12px;
+	box-sizing: border-box;
+	width: 100%;
 	border: none;
 	padding: 6px 0;
 	margin: 8px 0 16px;
-	width: 100%;
-	font-size: 16px;
-	line-height: 1.5;
-	box-sizing: border-box;
-	text-indent: 12px;
 }
 input[type='submit'] {
 	border: none;

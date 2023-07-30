@@ -1,37 +1,5 @@
 @charset "UTF-8";
 /* === 01 font-family ====== */
-.font-size-sm {
-  font-size: 0.875rem;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2.25rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
 /* === 02 color ====== */
 /* --- 02-1. 色系 --- */
 /* --- 02-2. 背景色 --- */
@@ -119,38 +87,6 @@ table {
 }
 
 /* === 自定義 reset ====== */
-.font-size-sm {
-  font-size: 0.875rem;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2.25rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -184,14 +120,14 @@ label {
 
 input {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-indent: 12px;
+  box-sizing: border-box;
+  width: 100%;
   border: none;
   padding: 6px 0;
   margin: 8px 0 16px;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  text-indent: 12px;
 }
 
 input[type=submit] {
@@ -227,6 +163,38 @@ body {
   vertical-align: middle;
   font-size: 2.25rem;
   color: #ffffff;
+}
+
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+h1, .h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-size: 2.25rem;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /* === 03 row and col ====== */
@@ -457,8 +425,16 @@ body {
 }
 
 /* --- header 表頭 --- */
-.header img {
+.header h1 a {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 80px;
   height: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* --- footer 表尾 --- */
@@ -497,7 +473,6 @@ body {
 /* --- 聯絡我們 --- */
 .contact li:nth-child(4) input {
   height: 136px;
-  margin: 0;
 }
 .contact li:nth-child(4) input::-moz-placeholder {
   position: relative;
