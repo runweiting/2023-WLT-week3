@@ -2,9 +2,9 @@
 *,**::before,*::after {
     box-sizing: border-box;
 }
-/*{
+*{
 outline: 1px solid yellowgreen;
-}/
+}
 
 /* === 02 全站樣式 ====== */
 body {
@@ -15,6 +15,13 @@ body {
 .container {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 0 12px;
+    @include ipad {
+        padding-inline: 36px;
+    }
+    @include iphone {
+        padding-inline: 15px;
+    }
 }
 .material-symbols-outlined {
     vertical-align: middle;
@@ -49,11 +56,6 @@ h6, .h6 {
 
 /* === 03 row and col ====== */
 .row {
-    margin-left: -12px;
-    margin-right: -12px;
-}
-.row-flex {
-    display: flex;
     margin-left: -12px;
     margin-right: -12px;
 }
@@ -115,6 +117,9 @@ h6, .h6 {
 }
 .align-items-center {
     align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 .ms-auto {
     margin-left: auto;
@@ -197,6 +202,10 @@ h6, .h6 {
 .py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 .py-4 {
     padding-top: 1rem;
