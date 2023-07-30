@@ -3,3 +3,18 @@
     overflow: hidden;
     white-space: nowrap;
 }
+@mixin ipad {
+    @media (max-width: 992px) {
+        @content
+    }
+}
+@mixin iphone {
+    @media (max-width: 767px) {
+        @content
+    }
+}
+@mixin moblie {
+    @media (max-width: 414px) {
+        @content
+    }
+}
