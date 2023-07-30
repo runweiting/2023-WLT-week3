@@ -118,20 +118,45 @@ label {
   cursor: pointer;
 }
 
-input {
+input, textarea {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-indent: 12px;
   box-sizing: border-box;
   width: 100%;
-  border: none;
+  border: 1px solid #000000;
+  outline: none;
   padding: 6px 0;
   margin: 8px 0 16px;
+  background-color: #FBF2F2;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 0.2;
+}
+input::placeholder, textarea::placeholder {
+  opacity: 0.2;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  border: 2px solid #000000;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+input[type=checkbox]:checked {
+  color: #ffffff;
 }
 
 input[type=submit] {
   border: none;
+  outline: none;
   padding: 16px 0;
   margin: 0;
   color: #ffffff;
@@ -143,9 +168,9 @@ input[type=submit] {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
+/*{
+outline: 1px solid yellowgreen;
+}/
 
 /* === 02 全站樣式 ====== */
 body {
@@ -471,14 +496,3 @@ h6, .h6 {
 }
 
 /* --- 聯絡我們 --- */
-.contact li:nth-child(4) input {
-  height: 136px;
-}
-.contact li:nth-child(4) input::-moz-placeholder {
-  position: relative;
-  top: -3rem;
-}
-.contact li:nth-child(4) input::placeholder {
-  position: relative;
-  top: -3rem;
-}
