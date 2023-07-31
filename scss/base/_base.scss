@@ -1,4 +1,4 @@
-/* === 01 border-box ====== */
+/* ======= 01 border-box ======= */
 *,**::before,*::after {
     box-sizing: border-box;
 }
@@ -6,7 +6,7 @@
 outline: 1px solid yellowgreen;
 }
 
-/* === 02 全站樣式 ====== */
+/* ======= 02 global attributes ===== */
 body {
     font-family: $font-family-base;
     line-height: 1.5;
@@ -28,6 +28,7 @@ body {
     font-size: 2.25rem;
     color: #ffffff;
 }
+/*--------------------------------*/
 .font-size-sm {
     font-size: $font-size-sm;
 }
@@ -51,10 +52,9 @@ h5, .h5 {
 }
 h6, .h6 {
 	font-size: $h6-font-size;
-	font-weight: 500;
 }
 
-/* === 03 row and col ====== */
+/* ======= 03 customize grid ===== */
 .row {
     margin-left: -12px;
     margin-right: -12px;
@@ -96,7 +96,7 @@ h6, .h6 {
     width: 100%;
 }
 
-/* === 04 flex ====== */
+/* ======= 04 flex ======= */
 .d-flex {
     display: flex;
 }
@@ -121,6 +121,8 @@ h6, .h6 {
 .flex-wrap {
     flex-wrap: wrap;
 }
+
+/* ======= 05 margin ======= */
 .ms-auto {
     margin-left: auto;
 }
@@ -130,22 +132,12 @@ h6, .h6 {
 .m0-auto {
     margin: 0 auto;
 }
-
-/* === 05 margin(4的倍數) ====== */
-
-/* --- 05-1. margin --- */
-.ms-auto {
-    margin-left: auto;
-}
-.me-auto {
-    margin-right: auto;
-}
+/*--------------------------------*/
 .mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
 }
-
-/* --- 05-2. margin-right --- */
+/*--------------------------------*/
 .mr-1 {
     margin-right: 0.25rem;
 }
@@ -164,8 +156,10 @@ h6, .h6 {
 .mr-16 {
     margin-right: 4rem;
 }
-
-/* --- 05-3. margin-bottom --- */
+/*--------------------------------*/
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
 .mb-2 {
     margin-bottom: 0.5rem;
 }
@@ -185,7 +179,7 @@ h6, .h6 {
     margin-bottom: 4.5rem;
 }
 
-/* === 06 padding(4的倍數) ====== */
+/* ======= 06 padding ======= */
 .p-2 {
     padding: 0.5rem;
 }
@@ -195,6 +189,7 @@ h6, .h6 {
 .p-4 {
     padding: 1rem;
 }
+/*--------------------------------*/
 .px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -220,16 +215,16 @@ h6, .h6 {
     padding-bottom: 5rem;
 }
 
-/* === 07 border ====== */
-.border-top {
-    border-top: 1px solid #ffffff;
+/* ======= 07 border ======= */
+.border-bottom {
+    border-bottom: 1px solid #ffffff;
 }
 .box-shadow {
     box-shadow: 0px 4px 6px #00000029;
     border-radius: 4px;
 }
 
-/* === 08 text-align ====== */
+/* ======= 08 text-align ======= */
 .text-center {
     text-align: center;
 }

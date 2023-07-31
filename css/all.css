@@ -1,8 +1,7 @@
 @charset "UTF-8";
-/* === 01 font-family ====== */
-/* === 02 color ====== */
-/* --- 02-1. 色系 --- */
-/* --- 02-2. 背景色 --- */
+/* ======= 01 font-family ======= */
+/* ======= 02 color ============= */
+/*--------------------------------*/
 .bg-primary {
   background-color: #AA0601;
 }
@@ -15,7 +14,7 @@
   background-color: #ffffff;
 }
 
-/* --- 02-3. 文字顏色 --- */
+/*--------------------------------*/
 .color-primary {
   color: #AA0601;
 }
@@ -163,7 +162,7 @@ input[type=submit] {
   background-color: #AA0601;
 }
 
-/* === 01 border-box ====== */
+/* ======= 01 border-box ======= */
 *, **::before, *::after {
   box-sizing: border-box;
 }
@@ -172,7 +171,7 @@ input[type=submit] {
   outline: 1px solid yellowgreen;
 }
 
-/* === 02 全站樣式 ====== */
+/* ======= 02 global attributes ===== */
 body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
   line-height: 1.5;
@@ -201,6 +200,7 @@ body {
   color: #ffffff;
 }
 
+/*--------------------------------*/
 .font-size-sm {
   font-size: 0.875rem;
 }
@@ -230,10 +230,9 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1.25rem;
-  font-weight: 500;
 }
 
-/* === 03 row and col ====== */
+/* ======= 03 customize grid ===== */
 .row {
   margin-left: -12px;
   margin-right: -12px;
@@ -287,7 +286,7 @@ h6, .h6 {
   width: 100%;
 }
 
-/* === 04 flex ====== */
+/* ======= 04 flex ======= */
 .d-flex {
   display: flex;
 }
@@ -320,6 +319,7 @@ h6, .h6 {
   flex-wrap: wrap;
 }
 
+/* ======= 05 margin ======= */
 .ms-auto {
   margin-left: auto;
 }
@@ -332,22 +332,13 @@ h6, .h6 {
   margin: 0 auto;
 }
 
-/* === 05 margin(4的倍數) ====== */
-/* --- 05-1. margin --- */
-.ms-auto {
-  margin-left: auto;
-}
-
-.me-auto {
-  margin-right: auto;
-}
-
+/*--------------------------------*/
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
-/* --- 05-2. margin-right --- */
+/*--------------------------------*/
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -372,7 +363,11 @@ h6, .h6 {
   margin-right: 4rem;
 }
 
-/* --- 05-3. margin-bottom --- */
+/*--------------------------------*/
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -397,7 +392,7 @@ h6, .h6 {
   margin-bottom: 4.5rem;
 }
 
-/* === 06 padding(4的倍數) ====== */
+/* ======= 06 padding ======= */
 .p-2 {
   padding: 0.5rem;
 }
@@ -410,6 +405,7 @@ h6, .h6 {
   padding: 1rem;
 }
 
+/*--------------------------------*/
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -440,9 +436,9 @@ h6, .h6 {
   padding-bottom: 5rem;
 }
 
-/* === 07 border ====== */
-.border-top {
-  border-top: 1px solid #ffffff;
+/* ======= 07 border ======= */
+.border-bottom {
+  border-bottom: 1px solid #ffffff;
 }
 
 .box-shadow {
@@ -450,7 +446,7 @@ h6, .h6 {
   border-radius: 4px;
 }
 
-/* === 08 text-align ====== */
+/* ======= 08 text-align ======= */
 .text-center {
   text-align: center;
 }
@@ -501,6 +497,7 @@ h6, .h6 {
 /* --- footer 表尾 --- */
 .footer {
   padding-top: 48px;
+  padding-bottom: 32px;
 }
 @media (max-width: 767px) {
   .footer {
@@ -557,7 +554,7 @@ h6, .h6 {
     margin-right: 10px;
   }
   .footer .icon-l a {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
@@ -591,6 +588,18 @@ h6, .h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+@media (max-width: 414px) {
+  .banner-primary {
+    height: 396px;
+  }
+  .banner-primary h3 {
+    font-size: 16px;
+  }
+  .banner-primary h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 .banner-primary .container {
   height: 100%;
