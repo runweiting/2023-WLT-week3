@@ -56,14 +56,20 @@
         }
     }
     .icon-m {
-        @include iphone {
-            gap: 16px;
-        }
         img {
             height: 48px;
             @include ipad {
                 height: 40px;
             }
+            @include moblie {
+                height: 24px;
+            }
+        }
+        @include iphone {
+            gap: 16px;
+        }
+        @include moblie {
+            gap: 8px;
         }
         li a {
             @include iphone {

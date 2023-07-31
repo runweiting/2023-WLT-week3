@@ -232,7 +232,7 @@ h2, .h2 {
     font-size: 32px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 568px) {
   h2, .h2 {
     font-size: 24px;
   }
@@ -569,17 +569,27 @@ h6, .h6 {
     display: none;
   }
 }
-@media (max-width: 767px) {
-  .footer .icon-m {
-    gap: 16px;
-  }
-}
 .footer .icon-m img {
   height: 48px;
 }
 @media (max-width: 992px) {
   .footer .icon-m img {
     height: 40px;
+  }
+}
+@media (max-width: 568px) {
+  .footer .icon-m img {
+    height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .icon-m {
+    gap: 16px;
+  }
+}
+@media (max-width: 568px) {
+  .footer .icon-m {
+    gap: 8px;
   }
 }
 @media (max-width: 767px) {
@@ -802,3 +812,34 @@ h6, .h6 {
 }
 
 /* ------- 聯絡我們 ------------- */
+@media (max-width: 568px) {
+  .formArea {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.formArea .contact {
+  width: 49.074%;
+}
+@media (max-width: 992px) {
+  .formArea .contact {
+    width: 82.758%;
+  }
+  .formArea .contact h2 {
+    margin-bottom: 24px;
+  }
+  .formArea .contact h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 568px) {
+  .formArea .contact {
+    width: 100%;
+  }
+  .formArea .contact .checkArea {
+    margin-bottom: 24px;
+  }
+  .formArea .contact input[type=submit] {
+    width: 100%;
+  }
+}
