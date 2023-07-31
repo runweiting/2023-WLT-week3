@@ -14,6 +14,11 @@
     }
 }
 @mixin moblie {
+    @media (max-width: 568px) {
+        @content
+    }
+}
+@mixin moblie-s {
     @media (max-width: 414px) {
         @content
     }

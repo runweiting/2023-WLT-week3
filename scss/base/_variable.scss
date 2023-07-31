@@ -1,13 +1,12 @@
 /* ======= 01 font-family ======= */
 $font-family-base: 'Roboto', 'Noto Sans TC', sans-serif;
 $font-size-base: 1rem; // 16px
-$font-size-sm: $font-size-base * 0.875; // 14px
 $h1-font-size: $font-size-base * 4;     // 64px
 $h2-font-size: $font-size-base * 3;     // 48px
 $h3-font-size: $font-size-base * 2.25;  // 36px
-$h4-font-size: $font-size-base * 2;     // 32px
-$h5-font-size: $font-size-base * 1.5;   // 24px
-$h6-font-size: $font-size-base * 1.25;  // 20px
+$h4-font-size: $font-size-base * 1.5;   // 24px
+$h5-font-size: $font-size-base * 1.25;  // 20px
+$h6-font-size: $font-size-base * 0.875; // 14px
 
 /* ======= 02 color ============= */
 $color-primary: #AA0601;

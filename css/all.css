@@ -154,6 +154,8 @@ input[type=checkbox]:checked {
 }
 
 input[type=submit] {
+  font-weight: 700;
+  width: 65.408%;
   border: none;
   outline: none;
   padding: 16px 0;
@@ -201,35 +203,75 @@ body {
 }
 
 /*--------------------------------*/
-.font-size-sm {
-  font-size: 0.875rem;
-}
-
 h1, .h1 {
   font-size: 4rem;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  h1, .h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 568px) {
+  h1, .h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 414px) {
+  h1, .h1 {
+    font-size: 24px;
+  }
 }
 
 h2, .h2 {
   font-size: 3rem;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  h2, .h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 414px) {
+  h2, .h2 {
+    font-size: 24px;
+  }
+}
 
 h3, .h3 {
   font-size: 2.25rem;
 }
-
-h4, .h4 {
-  font-size: 2rem;
+@media (max-width: 767px) {
+  h3, .h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 414px) {
+  h3, .h3 {
+    font-size: 16px;
+  }
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-h6, .h6 {
+h5, .h5 {
   font-size: 1.25rem;
+}
+@media (max-width: 568px) {
+  h5, .h5 {
+    font-size: 16px;
+  }
+}
+
+h6, .h6 {
+  font-size: 0.875rem;
+}
+
+.fw-medium {
+  font-weight: 500;
 }
 
 /* ======= 03 customize grid ===== */
@@ -459,7 +501,7 @@ h6, .h6 {
   text-align: right;
 }
 
-/* --- header 表頭 --- */
+/* ------- header 表頭 ------------- */
 .header h1 a {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
   background-size: cover;
@@ -494,7 +536,7 @@ h6, .h6 {
   }
 }
 
-/* --- footer 表尾 --- */
+/* ------- footer 表尾 ------------- */
 .footer {
   padding-top: 48px;
   padding-bottom: 32px;
@@ -574,32 +616,20 @@ h6, .h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    font-size: 16px;
   }
   .copyright ul a {
+    font-size: 16px;
     margin: 0;
   }
 }
 
-/* --- banner 橫幅 --- */
+/* ------- banner 橫幅 ------------- */
 .banner-primary {
   height: 787px;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-@media (max-width: 414px) {
-  .banner-primary {
-    height: 396px;
-  }
-  .banner-primary h3 {
-    font-size: 16px;
-  }
-  .banner-primary h2 {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
 }
 .banner-primary .container {
   height: 100%;
@@ -608,12 +638,167 @@ h6, .h6 {
   display: inline-block;
   padding: 6px 12px;
 }
+@media (max-width: 568px) {
+  .banner-primary {
+    height: 396px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+  .banner-primary h2 {
+    margin-bottom: 8px;
+  }
+}
 
-/* --- 聯名鏡框 --- */
+/* ------- 服務特點 ------------- */
+@media (max-width: 568px) {
+  .feature {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .feature ul {
+    flex-wrap: wrap;
+  }
+  .feature ul li {
+    width: calc(50% - 24px);
+  }
+  .feature ul li:nth-child(1), .feature ul li:nth-child(2) {
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 568px) {
+  .feature ul li {
+    width: 100%;
+  }
+}
+
+/* ------- 經典鏡框 ------------- */
+@media (max-width: 568px) {
+  .product {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .product .product-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .product ul li {
+    width: 46.66%;
+    padding: 0;
+  }
+}
+@media (max-width: 568px) {
+  .product ul {
+    margin: 0;
+  }
+  .product ul li {
+    width: 100%;
+  }
+  .product ul h2 {
+    font-size: 48px;
+  }
+}
+
+/* ------- 聯名鏡框 ------------- */
 .banner-secondary {
-  height: 608px;
+  max-height: 608px;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+.banner-secondary .container {
+  height: 100%;
+}
+.banner-secondary .photoBox {
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .banner-secondary {
+    max-height: 960px;
+  }
+  .banner-secondary ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .banner-secondary li {
+    max-width: 100%;
+  }
+  .banner-secondary .photoBox {
+    max-height: 240px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-secondary {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+  }
+}
+@media (max-width: 568px) {
+  .banner-secondary {
+    max-height: 820px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+  }
+  .banner-secondary .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .banner-secondary .banner-title {
+    margin-bottom: 24px;
+  }
+  .banner-secondary .photoBox {
+    width: 100%;
+    overflow: hidden;
+  }
+  .banner-secondary .photoBox img {
+    height: 240px;
+  }
+  .banner-secondary ul h2 {
+    font-size: 48px;
+  }
+}
+
+/* ------- 顧客推薦 ------------- */
+.recommend .textBox {
+  height: 173px;
+}
+@media (max-width: 992px) {
+  .recommend ul {
+    flex-wrap: wrap;
+  }
+  .recommend ul li {
+    width: calc(50% - 24px);
+  }
+  .recommend ul li:nth-child(1), .recommend ul li:nth-child(2) {
+    margin-bottom: 24px;
+  }
+  .recommend ul li .photoBox {
+    max-height: 306px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 568px) {
+  .recommend {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .recommend h2 {
+    margin-bottom: 24px;
+  }
+  .recommend ul {
+    flex-wrap: wrap;
+  }
+  .recommend ul li {
+    width: 100%;
+  }
+}
+
+/* ------- 聯絡我們 ------------- */
