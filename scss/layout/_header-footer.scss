@@ -45,21 +45,26 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-
-        padding-block: 24px;
+        padding-top: 24px;
+        padding-bottom: 20px;
     }
     .subnavBox {
         @include ipad {
+            align-items: center;
             margin-bottom: 24px;
         }
         @include iphone {
-            gap: 8px;
+            margin-bottom: 0;
         }
     }
     .subnav-menu {
+        li:nth-child(1) a {
+            padding-left: 0;
+        }
         a {
             @include ipad {
-                padding: 8px 0;
+                margin-right: 0;
+                padding: 8px 24px;
             }
         }
         @include iphone {
@@ -67,6 +72,14 @@
         }
     }
     .subnav-icon-m {
+        li:nth-child(3) a {
+            margin-right: 0;
+        }
+        a {
+            @include ipad {
+                margin-right: 16px;
+            }
+        }
         img {
             height: 48px;
             @include ipad {
@@ -106,7 +119,7 @@
         padding: 32px 40px;
     }
     @include iphone {
-        padding: 16px 15px 24px;
+        padding: 20px 15px 24px;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
