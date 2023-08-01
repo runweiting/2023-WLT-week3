@@ -1,28 +1,38 @@
 /* ------- header 表頭 ------------- */
-.header h1 a {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 80px;
-    height: 48px;
-    @include hide-text;
-}
-.nav .menu {
-    @include iphone {
-        display: none;
+.navbar-wrap {
+    h1 a {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 80px;
+        height: 48px;
+        @include hide-text;
     }
-}
-.iphone-menu {
-    display: none;
     @include iphone {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -15px;
-        margin-right: -15px;
-        li {
-            width: calc(50% - 2px);
-            border: 1px solid $white;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        max-width: 100%;
+        h1 {
+            align-self: flex-start;
+            a {
+                margin: 0 0 16px 15px;
+            }
+        }
+        .navbar-menu {
+            width: 100%;
+            flex-wrap: wrap;
+            li {
+                width: calc(50% - 2px);
+                border: 1px solid $white;
+            }
+            a {
+                padding: 12px 0;
+                margin: 0;
+                text-align: center;
+            }
         }
     }
 }
