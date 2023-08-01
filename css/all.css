@@ -559,12 +559,12 @@ h6, .h6 {
 }
 
 /* ------- footer 表尾 ------------- */
-.footer {
+.subnav {
   padding-top: 48px;
   padding-bottom: 32px;
 }
 @media (max-width: 768px) {
-  .footer {
+  .subnav {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -572,62 +572,62 @@ h6, .h6 {
   }
 }
 @media (max-width: 992px) {
-  .footer .subnav {
+  .subnav .subnavBox {
     margin-bottom: 24px;
   }
 }
 @media (max-width: 768px) {
-  .footer .subnav {
+  .subnav .subnavBox {
     gap: 8px;
   }
 }
 @media (max-width: 992px) {
-  .footer .menu a {
+  .subnav .subnav-menu a {
     padding: 8px 0;
   }
 }
 @media (max-width: 768px) {
-  .footer .menu {
+  .subnav .subnav-menu {
     display: none;
   }
 }
-.footer .icon-m img {
+.subnav .subnav-icon-m img {
   height: 48px;
 }
 @media (max-width: 992px) {
-  .footer .icon-m img {
+  .subnav .subnav-icon-m img {
     height: 40px;
   }
 }
 @media (max-width: 568px) {
-  .footer .icon-m img {
+  .subnav .subnav-icon-m img {
     height: 24px;
   }
 }
 @media (max-width: 768px) {
-  .footer .icon-m {
+  .subnav .subnav-icon-m {
     gap: 16px;
   }
 }
 @media (max-width: 568px) {
-  .footer .icon-m {
+  .subnav .subnav-icon-m {
     gap: 8px;
   }
 }
 @media (max-width: 768px) {
-  .footer .icon-m li a {
+  .subnav .subnav-icon-m li a {
     margin: 0;
   }
 }
 @media (max-width: 768px) {
-  .footer .icon-l {
+  .subnav .subnav-icon-l {
     margin: 0;
   }
-  .footer .icon-l .material-symbols-outlined {
+  .subnav .subnav-icon-l .material-symbols-outlined {
     font-size: 18px;
     margin-right: 10px;
   }
-  .footer .icon-l a {
+  .subnav .subnav-icon-l a {
     font-size: 16px;
   }
 }

@@ -38,16 +38,17 @@
 }
 
 /* ------- footer 表尾 ------------- */
-.footer {
+.subnav {
     padding-top: 48px;
     padding-bottom: 32px;
     @include iphone {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+
         padding-block: 24px;
     }
-    .subnav {
+    .subnavBox {
         @include ipad {
             margin-bottom: 24px;
         }
@@ -55,7 +56,7 @@
             gap: 8px;
         }
     }
-    .menu {
+    .subnav-menu {
         a {
             @include ipad {
                 padding: 8px 0;
@@ -65,7 +66,7 @@
             display: none;
         }
     }
-    .icon-m {
+    .subnav-icon-m {
         img {
             height: 48px;
             @include ipad {
@@ -87,7 +88,7 @@
             }
         }
     }
-    .icon-l {
+    .subnav-icon-l {
         @include iphone {
             margin: 0;
             .material-symbols-outlined {
