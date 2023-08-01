@@ -28,9 +28,13 @@ body {
     }
     @include moblie {
         max-width: 520px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     @include moblie-s {
         max-width: 366px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 .material-symbols-outlined {

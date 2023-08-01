@@ -204,11 +204,15 @@ body {
 @media (max-width: 568px) {
   .container {
     max-width: 520px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 414px) {
   .container {
     max-width: 366px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -718,8 +722,20 @@ h6, .h6 {
     width: 100%;
   }
 }
+@media (max-width: 414px) {
+  .feature ul .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* ------- 經典鏡框 ------------- */
+@media (max-width: 768px) {
+  .product .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media (max-width: 568px) {
   .product {
     padding-top: 40px;
@@ -801,7 +817,7 @@ h6, .h6 {
     margin-bottom: 24px;
   }
   .banner-secondary .photoBox {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
   }
   .banner-secondary .photoBox img {
@@ -831,6 +847,20 @@ h6, .h6 {
     overflow: hidden;
   }
 }
+@media (max-width: 768px) {
+  .recommend .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recommend ul {
+    gap: 24px;
+  }
+  .recommend ul li {
+    margin-left: 0;
+    margin-right: 0;
+    width: calc(50% - 12px);
+  }
+}
 @media (max-width: 568px) {
   .recommend {
     padding-top: 40px;
@@ -848,6 +878,9 @@ h6, .h6 {
 }
 
 /* ------- 聯絡我們 ------------- */
+.formArea {
+  max-width: 100%;
+}
 @media (max-width: 568px) {
   .formArea {
     padding-top: 40px;
@@ -855,11 +888,11 @@ h6, .h6 {
   }
 }
 .formArea .contact {
-  width: 49.074%;
+  width: 50%;
 }
 @media (max-width: 992px) {
   .formArea .contact {
-    width: 82.758%;
+    width: 75%;
   }
   .formArea .contact h2 {
     margin-bottom: 24px;

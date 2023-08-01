@@ -43,10 +43,22 @@
             width: 100%;
         }
     }
+    @include moblie-s {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 }
 
 /* ------- 經典鏡框 ------------- */
 .product {
+    @include iphone {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
     @include moblie {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -117,7 +129,7 @@
             margin-bottom: 24px;
         }
         .photoBox {
-            width: 100%;
+            max-width: 100%;
             overflow: hidden;
             img {
                 height: 240px;
@@ -151,6 +163,20 @@
         }
 
     }
+    @include iphone {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        ul {
+            gap: 24px;
+            li {
+                margin-left: 0;
+                margin-right: 0;
+                width: calc(50% - 12px);
+            }
+        }
+    }
     @include moblie {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -168,14 +194,15 @@
 
 /* ------- 聯絡我們 ------------- */
 .formArea {
+    max-width: 100%;
     @include moblie {
         padding-top: 40px;
         padding-bottom: 40px;
     }
     .contact {
-        width: 49.074%;
+        width: 50%;
         @include ipad {
-            width: 82.758%;
+            width: 75%;
             h2 {
                 margin-bottom: 24px;
             }
