@@ -171,10 +171,9 @@ input[type=submit] {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
-}
-
+/*{
+outline: 1px solid yellowgreen;
+}*/
 /* ======= 02 global attributes ===== */
 body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
