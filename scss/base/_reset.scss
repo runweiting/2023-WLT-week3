@@ -92,6 +92,7 @@ input, textarea {
 }
 input[type='checkbox'] {
 	display: inline-block;
+	appearance: none;
 	border: 2px solid $black;
 	outline: none;
 	width: 20px;
